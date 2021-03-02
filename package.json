@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "0.0.1",
+  "description": "Bryce McLachlan's resume",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cp -r src/. build && babel src -d build && node build/index.js && mv build/output.pdf resume.pdf && rm -fr build"
+  },
+  "author": "Bryce McLachlan",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-react": "^7.12.13",
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@react-pdf/renderer": "^1.6.13",
+    "react": "^16.14.0",
+    "sharp": "^0.27.2"
+  }
+}

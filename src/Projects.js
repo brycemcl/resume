@@ -61,6 +61,18 @@ const Entry = ({
       return previous;
     });
 
+  // only show live demo if it exists
+  let liveDemoPlaceholder;
+  if (liveDemo && callToAction) {
+    liveDemoPlaceholder = (
+      <ContactItem src={liveDemo} iconName="solid/link.svg">
+        {callToAction}
+      </ContactItem>
+    );
+  } else {
+    liveDemoPlaceholder = null;
+  }
+
   return (
     <View>
       <View style={styles.heading}>
@@ -76,9 +88,7 @@ const Entry = ({
           <ContactItem src={github} iconName="brands/github-square.svg">
             Repository
           </ContactItem>
-          <ContactItem src={liveDemo} iconName="solid/link.svg">
-            {callToAction}
-          </ContactItem>
+          {liveDemoPlaceholder}
         </View>
       </View>
     </View>

@@ -29,8 +29,8 @@ const {
     name,
     date,
     github,
-    liveDemo,
-    callToAction,
+    liveDemo = null,
+    callToAction = null,
     summary,
     stack,
   }) => {

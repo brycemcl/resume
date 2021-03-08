@@ -28,8 +28,8 @@ project({
   name: 'Scheduler',
   date: 2021,
   github: 'https://github.com/brycemcl/scheduler',
-  liveDemo: 'https://raw.githubusercontent.com/brycemcl/resume/main/resume.pdf',
-  callToAction: 'Live Demo',
+  // liveDemo: 'https://github.com/brycemcl/scheduler',
+  // callToAction: '',
   summary:
     'Created with React, this project demonstrates a modern web technology stack.',
   stack: [

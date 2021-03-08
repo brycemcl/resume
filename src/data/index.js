@@ -35,8 +35,8 @@ project({
   stack: [
     'React',
     'ReactDOM',
-    'Kubernetes',
-    'Docker',
+    // 'Kubernetes',
+    // 'Docker',
     'PostgreSQL',
     'Express',
     'Rest',

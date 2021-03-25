@@ -1,7 +1,8 @@
-import React from 'react';
-import { Text, View, StyleSheet } from '@react-pdf/renderer';
-import Title from './Title.js';
-import ContactItem from './ContactInfo/ContactItem.js';
+import React from 'react'
+import { Text, View, StyleSheet, Link } from '@react-pdf/renderer'
+import Title from './Title.js'
+import ContactItem from './ContactInfo/ContactItem.js'
+import Icon from './Icon.js'
 
 const styles = StyleSheet.create({
   container: {
@@ -22,6 +23,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     paddingBottom: 5,
+    textDecoration: 'none',
   },
   organization: { fontFamily: 'Lato Italic', fontSize: 10 },
   rightHeading: {
@@ -36,7 +38,7 @@ const styles = StyleSheet.create({
     paddingTop: 5,
     fontFamily: 'Lato Italic',
   },
-});
+})
 
 const Entry = ({
   name,
@@ -48,36 +50,40 @@ const Entry = ({
   stack,
 }) => {
   if (!Array.isArray(stack)) {
-    stack = [stack];
+    stack = [stack]
   }
   stack =
     'Made with: ' +
     stack.reduce((previous, current, index, array) => {
       if (array.length - 1 === index) {
-        previous = `${previous} and ${current}`;
+        previous = `${previous} and ${current}`
       } else {
-        previous = `${previous}, ${current}`;
+        previous = `${previous}, ${current}`
       }
-      return previous;
-    });
+      return previous
+    })
 
   // only show live demo if it exists
-  let liveDemoPlaceholder;
+  let liveDemoPlaceholder
   if (liveDemo && callToAction) {
     liveDemoPlaceholder = (
-      <ContactItem src={liveDemo} iconName="solid/link.svg">
+      <ContactItem src={liveDemo} iconName='solid/link.svg'>
         {callToAction}
       </ContactItem>
-    );
+    )
   } else {
-    liveDemoPlaceholder = null;
+    liveDemoPlaceholder = null
   }
 
   return (
     <View>
       <View style={styles.heading}>
-        <View style={styles.leftHeading}>
-          <Text>{name}</Text>
+        <View>
+          <Link src={github} target='_blank' style={styles.heading}>
+            {name}
+            &nbsp;
+            <Icon name={'brands/github-square.svg'} />
+          </Link>
           <View style={styles.summary}>
             <Text>{summary}</Text>
             <Text style={styles.stack}>{stack}</Text>
@@ -85,15 +91,12 @@ const Entry = ({
         </View>
         <View style={styles.rightHeading}>
           <Text style={styles.date}>{date}</Text>
-          <ContactItem src={github} iconName="brands/github-square.svg">
-            Repository
-          </ContactItem>
           {liveDemoPlaceholder}
         </View>
       </View>
     </View>
-  );
-};
+  )
+}
 const Projects = ({ title, data }) => {
   return (
     <View style={null}>
@@ -111,7 +114,7 @@ const Projects = ({ title, data }) => {
         />
       ))}
     </View>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

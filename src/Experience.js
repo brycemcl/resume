@@ -1,7 +1,6 @@
-import React from 'react';
-import { Text, View, StyleSheet } from '@react-pdf/renderer';
-import Title from './Title.js';
-import List, { Item } from './List.js';
+import React from 'react'
+import { Text, View, StyleSheet } from '@react-pdf/renderer'
+import Title from './Title.js'
 
 const styles = StyleSheet.create({
   container: {
@@ -19,22 +18,22 @@ const styles = StyleSheet.create({
   },
   organization: { fontFamily: 'Lato Italic', fontSize: 10 },
   RightHeading: { fontFamily: 'Lato', fontSize: 10 },
-});
+})
 
 const Entry = ({ organization, dates, skills, position }) => {
   if (!Array.isArray(skills)) {
-    skills = [skills];
+    skills = [skills]
   }
   skills = skills.map((item, index) => {
-    return <Item key={index}>{item}</Item>;
-  });
+    return <Text key={index}>{item}</Text>
+  })
   const heading = (
     <>
       <Text>{position}</Text>
       <Text style={styles.organization}>{organization}</Text>
     </>
-  );
-  const dateAttended = `${dates.dateStart} - ${dates.dateEnd}`;
+  )
+  const dateAttended = `${dates.dateStart} - ${dates.dateEnd}`
   return (
     <View style={styles.container}>
       <View style={styles.heading}>
@@ -42,11 +41,12 @@ const Entry = ({ organization, dates, skills, position }) => {
         <Text style={styles.RightHeading}>{dateAttended}</Text>
       </View>
       <View>
-        <List>{skills}</List>
+        {skills}
+        {/* <List>{skills}</List> */}
       </View>
     </View>
-  );
-};
+  )
+}
 const Experience = ({ title, data }) => {
   return (
     <View style={null}>
@@ -61,7 +61,7 @@ const Experience = ({ title, data }) => {
         />
       ))}
     </View>
-  );
-};
+  )
+}
 
-export default Experience;
+export default Experience

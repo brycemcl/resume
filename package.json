@@ -4,7 +4,7 @@
   "description": "Bryce McLachlan's resume",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cp -r src/. build && babel src -d build && node build/index.js && mv build/output.pdf resume.pdf && rm -fr build"
+    "build": "cp -r src/. build && babel src -d build && node build/index.js && mv build/output.pdf Bryce_McLachlan_Resume.pdf && rm -fr build"
   },
   "author": "Bryce McLachlan",
   "license": "ISC",

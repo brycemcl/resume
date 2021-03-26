@@ -35,7 +35,7 @@ project({
   ],
 })
 project({
-  name: 'This resume you are looking at',
+  name: 'The resume you are looking at',
   date: 'March 2021',
   github: 'https://github.com/brycemcl/resume',
   liveDemo: 'https://brycemcl.github.io/resume/',

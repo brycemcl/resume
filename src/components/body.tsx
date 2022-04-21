@@ -155,9 +155,9 @@ export const Body = () => {
             flex: 5,
           }}>
           <Padding>
-            {...RightColumn.map((i) => (
-              <Section title={i.title}>{i.body}</Section>
-            ))}
+            {...RightColumn.filter(
+              (category) => category.body.props.children.length,
+            ).map((i) => <Section title={i.title}>{i.body}</Section>)}
           </Padding>
         </div>
       </Horizontal>

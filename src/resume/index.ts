@@ -7,7 +7,7 @@ export const resume = new Resume({
     pronouns: 'he/him/his',
     position: 'Full Stack Software Engineer, Team Lead',
     summary:
-      'A compassionate software engineer who is seeking their next role where they can make an impact. I bring over a decade of leadership experience across a range of industries and a year of software engineering experience.',
+      'Over a decade of leadership experience across a range of industries and a year of software engineering experience. I am a compassionate software engineer who is seeking their next role where they can make an impact.',
     contactInfo: {
       email: new URL('mailto:brycemclachlan@gmail.com'),
       github: new URL('https://github.com/brycemcl'),
@@ -100,14 +100,16 @@ export const resume = new Resume({
       dateEnd: now,
       organization: 'Fobi AI',
       position: 'Full Stack Software Engineer, Team Lead',
-      summary: 'Provide a good work environment for the team. Help balance the competing priories of various stakeholders, provide mentorship to teammates and lead discussions regarding both company culture and technical topics.',
+      summary:
+        'Lead a refactor of an existing codebase to migrate from a NoSQL database to a SQL database, implemented type safety across our codebase/apis and implemented custom autoscaling metrics.\n\nHelp balance the competing priories of various stakeholders, provide mentorship to teammates and lead discussions regarding both company culture and technical topics.',
     },
     {
       dateStart: new Date('2022-02'),
       dateEnd: new Date('2021-05'),
       organization: 'Fobi AI',
       position: 'Full Stack Software Engineer',
-      summary: 'Working in an agile team, developing our analytics platform to support custom use cases, improve reliability, reduce costs and add new features.',
+      summary:
+        'Working in a scrum team, develop our analytics platform to support custom use cases, improve reliability, reduce costs and add new features.',
     },
     {
       dateStart: new Date('2020-06'),
@@ -115,20 +117,20 @@ export const resume = new Resume({
       organization: 'JCR Design & Drafting',
       position: 'Building Designer',
       summary:
-        'Core responsibilities include mentorship for new designers, reviewing drawings before submissions, coordination between involved parties and designing buildings. In this role, I set up and did system administration for our IT systems and scripted away repetitive parts of the job.',
+        'Designed and configured our network at our new office. Implemented Kubernetes cluster that hosted our NAS, remote access and 3d rendering jobs. Performed system administration for our IT systems. Scripted away repetitive parts of the designing buildings.\n\nCore responsibilities include mentorship for new designers, reviewing drawings before submissions, coordination between involved parties and designing buildings.',
     },
   ],
   projects: [
-    {
-      name: 'This resume you are looking at',
-      date: new Date('2021-04'),
-      stack: ['React', 'Playwright', 'Typescript'],
-      summary:
-        'Using React as a template engine, this resume shows how web technologies can be used outside a browser context. I have applied a similar concept for dynamically creating emails with MJML and React in a production applicion.',
-      github: new URL('https://github.com/brycemcl/resume'),
-      liveDemo: new URL('https://brycemcl.github.io/resume/'),
-      callToAction: 'Updated PDF',
-    },
+    // {
+    //   name: 'This resume you are looking at',
+    //   date: new Date('2021-04'),
+    //   stack: ['React', 'Playwright', 'Typescript'],
+    //   summary:
+    //     'Using React as a template engine, this resume shows how web technologies can be used outside a browser context. I have applied a similar concept for dynamically creating emails with MJML and React in a production applicion.',
+    //   github: new URL('https://github.com/brycemcl/resume'),
+    //   liveDemo: new URL('https://brycemcl.github.io/resume/'),
+    //   callToAction: 'Updated PDF',
+    // },
   ],
   education: [
     {

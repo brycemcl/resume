@@ -104,16 +104,16 @@ export const resume = new Resume({
         'Lead a refactor of an existing codebase to migrate from a NoSQL database to a SQL database, implemented type safety across our codebase/apis and implemented custom autoscaling metrics.\n\nHelp balance the competing priories of various stakeholders, provide mentorship to teammates and lead discussions regarding both company culture and technical topics.',
     },
     {
-      dateStart: new Date('2022-02'),
-      dateEnd: new Date('2021-05'),
+      dateStart: new Date('2021-05'),
+      dateEnd: new Date('2022-02'),
       organization: 'Fobi AI',
       position: 'Full Stack Software Engineer',
       summary:
         'Working in a scrum team, develop our analytics platform to support custom use cases, improve reliability, reduce costs and add new features.',
     },
     {
-      dateStart: new Date('2020-06'),
-      dateEnd: new Date('2016-11'),
+      dateStart: new Date('2016-11'),
+      dateEnd: new Date('2020-06'),
       organization: 'JCR Design & Drafting',
       position: 'Building Designer',
       summary:

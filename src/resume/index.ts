@@ -101,7 +101,7 @@ export const resume = new Resume({
       organization: 'Fobi AI',
       position: 'Full Stack Software Engineer, Team Lead',
       summary:
-        'Lead a refactor of an existing codebase to migrate from a NoSQL database to a SQL database, implemented type safety across our codebase/apis and implemented custom autoscaling metrics.\n\nHelp balance the competing priories of various stakeholders, provide mentorship to teammates and lead discussions regarding both company culture and technical topics.',
+        'Lead a refactor of an existing codebase to migrate from a NoSQL database to a SQL database, implemented type safety across our codebase/apis and implemented custom autoscaling metrics.\n\nHelp balance the competing priorities of various stakeholders, provide mentorship to teammates and lead discussions regarding both company culture and technical topics.',
     },
     {
       dateStart: new Date('2021-05'),

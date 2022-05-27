@@ -112,8 +112,8 @@ export const resume = new Resume({
         'Working in a scrum team, develop our analytics platform to support custom use cases, improve reliability, reduce costs and add new features.',
     },
     {
-      dateStart: new Date('2016-11'),
-      dateEnd: new Date('2020-06'),
+      dateStart: new Date('2016-06'),
+      dateEnd: new Date('2020-11'),
       organization: 'JCR Design & Drafting',
       position: 'Building Designer',
       summary:

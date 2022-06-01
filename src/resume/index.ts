@@ -7,7 +7,7 @@ export const resume = new Resume({
     pronouns: 'he/him/his',
     position: 'Full Stack Software Engineer, Team Lead',
     summary:
-      'Over a decade of leadership experience across a range of industries and a year of software engineering experience. I am a compassionate software engineer who is seeking their next role where they can make an impact.',
+      'Over a decade of leadership experience across a range of industries and a year of software engineering experience. I am a compassionate software engineer who is seeking my next role where I can make an impact.',
     contactInfo: {
       email: new URL('mailto:brycemclachlan@gmail.com'),
       github: new URL('https://github.com/brycemcl'),

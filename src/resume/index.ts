@@ -96,8 +96,16 @@ export const resume = new Resume({
   ],
   experience: [
     {
-      dateStart: new Date('2022-02'),
+      dateStart: new Date('2022-07'),
       dateEnd: now,
+      organization: 'Spare',
+      position: 'Software Engineer - Backend Platform Team',
+      summary:
+        'Work on the scalability of our Platform by improving and maintaining cloud infrastructure, as well as maintaining internal CI/CD tooling to improve the productivity of the engineering department.',
+    },
+    {
+      dateStart: new Date('2022-02'),
+      dateEnd: new Date('2022-06'),
       organization: 'Fobi AI',
       position: 'Full Stack Software Engineer, Team Lead',
       summary:
@@ -117,7 +125,7 @@ export const resume = new Resume({
       organization: 'JCR Design & Drafting',
       position: 'Building Designer',
       summary:
-        'Designed and configured our network at our new office. Implemented Kubernetes cluster that hosted our NAS, remote access and 3d rendering jobs. Performed system administration for our IT systems. Scripted away repetitive parts of the designing buildings.\n\nCore responsibilities include mentorship for new designers, reviewing drawings before submissions, coordination between involved parties and designing buildings.',
+        'Designed and configured our network at our new office. Implemented and maintained a Kubernetes cluster that hosted internal systems. Scripted away repetitive parts of the designing buildings. Designed buildings and mentored other building designers',
     },
   ],
   projects: [
@@ -139,7 +147,7 @@ export const resume = new Resume({
       organization: 'Lighthouse Labs',
       position: 'Web Development Diploma',
       summary:
-        'Learned practical skills to use web technologies to build modern websites, apps, & tools.',
+        'Learned practical skills to build websites, apps, & tools.',
     },
     {
       dateStart: new Date('2015'),
